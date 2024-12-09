@@ -3,28 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figma Land</title>
+    <title>Figma Land</title>      
+    <link rel="stylesheet" href="css/index.css"> 
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      color: black;
-    }
-    .hero__section {
-      position: relative;
-      background-image: url(img/photo/bg-photo.png);
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100vh;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
-    }
-  </style>
   <body>
     <section class="hero">
       <header class="hero__header">
@@ -36,35 +17,37 @@
             <li class="hero__nav-item">About</li>
             <li class="hero__nav-item">Contact</li>
           </ul>
+       
 
           <a href="#" class="hero__logo-link">
-            <img src="img/photo/logo.png" alt="Logo photo" class="hero__logo"/>
+            <img src="assets/img/photo/logo.png" alt="Logo photo" class="hero__logo"/>
           </a>
-
+        </nav>
+        <div class="hero__social">
           <ul class="hero__social-list">
             <li class="hero__social-item">
               <a href="#" class="hero__social-link"
                 ><img
-                  src="img/svg/ant-design_twitter-outlined.png"
+                  src="assets/img/svg/ant-design_twitter-outlined.png"
                   alt="Twitter icon" class="hero__social-icon"
               /></a>
             </li>
             <li class="hero__social-item">
               <a href="#" class="hero__social-link"
                 ><img
-                  src="img/svg/ant-design_facebook-filled.png"
+                  src="assets/img/svg/ant-design_facebook-filled.png"
                   alt="Facebook icon" class="hero__logo"
               /></a>
             </li>
             <li class="hero__social-item">
               <a href="#" class="hero__logo-link"
                 ><img
-                  src="img/svg/ant-design_linkedin-filled.png"
+                  src="assets/img/svg/ant-design_linkedin-filled.png"
                   alt="Linkedin icon" class="hero__logo"
               /></a>
             </li>
           </ul>
-        </nav>
+        </div>
       </header>
       <div class="hero__information">
         <h1 class="hero__heading">The best products start with Figma</h1>
@@ -86,7 +69,7 @@
         <div class="features__list">
           <article class="feature__item">
             <img
-              src="img/svg/Vector.png"
+              src="assets/img/svg/Vector.png"
               alt="OpenType features icon"
               class="feature__icon"
             />
@@ -99,7 +82,7 @@
 
           <acticle class="feature-item">
             <img
-              src="img/svg/mdi_draw.png"
+              src="assets/img/svg/mdi_draw.png"
               alt="Design with real data"
               class="feature__icon"
             />
@@ -112,7 +95,7 @@
 
           <acticle class="feature-item">
             <img
-              src="img/svg/mdi_brush.png"
+              src="assets/img/svg/mdi_brush.png"
               alt="Fastest way to 
 take action"
               class="feature__icon"
@@ -141,13 +124,13 @@ take action"
         <a href="#" class="organize__btn btn btn--primary">Try For Free</a>
       </div>
       <div class="organize__img-container">
-        <img src="img/photo/mockup-product.png" alt="Product Mockup" class="organize__img" />
+        <img src="assets/img/photo/mockup-product.png" alt="Product Mockup" class="organize__img" />
       </div>
     </section>
 
     <section class="prototyping">
       <figure class="prototyping__img-container">
-        <img src="img/photo/left-container.png" alt="Person with a letter" class="prototyping__img"/>
+        <img src="assets/img/photo/left-container.png" alt="Person with a letter" class="prototyping__img"/>
       </figure>
       <article class="prototyping__text-block">
         <h2 class="prototyping__heading">
@@ -182,7 +165,7 @@ take action"
           <figcaption class="partner__name">Client Name</figcaption>
           <img
             class="partner__logo"
-            src="img/photo/logos_google-1.png"
+            src="assets/img/photo/logos_google-1.png"
             alt="Google Logo"
           />
         </figure>
@@ -191,7 +174,7 @@ take action"
           <figcaption class="partner__name">Client Name</figcaption>
           <img
             class="partner__logo"
-            src="img/photo/amazon.png"
+            src="assets/img/photo/amazon.png"
             alt="Amazon Logo"
           />
         </figure>
@@ -200,21 +183,21 @@ take action"
           <figcaption class="partner__name">Client Name</figcaption>
           <img
             class="partner__logo"
-            src="img/photo/microsoft.png"
+            src="assets/img/photo/microsoft.png"
             alt="Microsoft Logo"
           />
         </figure>
 
         <figure class="partner">
           <figcaption class="partner__name">Client Name</figcaption>
-          <img class="partner__logo" src="img/photo/uber.png" alt="Uber Logo" />
+          <img class="partner__logo" src="assets/img/photo/uber.png" alt="Uber Logo" />
         </figure>
 
         <figure class="partner">
           <figcaption class="partner__name">Client Name</figcaption>
           <img
             class="partner__logo"
-            src="img/photo/dropbox.png"
+            src="assets/img/photo/dropbox.png"
             alt="Dropbox Logo"
           />
         </figure>
@@ -223,21 +206,21 @@ take action"
           <figcaption class="partner__name">Client Name</figcaption>
           <img
             class="partner__logo"
-            src="img/photo/logos_google-1.png"
+            src="assets/img/photo/logos_google-1.png"
             alt="Google Logo"
           />
         </figure>
 
         <figure class="partner">
           <figcaption class="partner__name">Client Name</figcaption>
-          <img class="partner__logo" src="img/photo/uber.png" alt="Uber Logo" />
+          <img class="partner__logo" src="assets/img/photo/uber.png" alt="Uber Logo" />
         </figure>
 
         <figure class="partner">
           <figcaption class="partner__name">Client Name</figcaption>
           <img
             class="partner__logo"
-            src="img/photo/amazon.png"
+            src="assets/img/photo/amazon.png"
             alt="Amazon Logo"
           />
         </figure>
@@ -248,7 +231,7 @@ take action"
     <section class="testimonials">
       <h2 class="testimonials__title">Testimonials</h2>
       <figure>
-        <img src="img/photo/logos_ibm.png" alt="IBM Logo" class="testimonials__logo" />
+        <img src="assets/img/photo/logos_ibm.png" alt="IBM Logo" class="testimonials__logo" />
       </figure>
       <p class="testimonials__text">
         Most calendars are designed for teams. Slate is designed for freelancers
@@ -258,7 +241,7 @@ take action"
       <div class="testimonials__author">
         <img
           class="testimonials__author-photo"
-          src="img/photo/testimonial.png"
+          src="assets/img/photo/testimonial.png"
           alt="Testimonial Author"
         />
         <div class="testimonials__author-info">
@@ -310,6 +293,25 @@ take action"
                     <p class="pricing__plan-feature">Pricing Feature</p>
                     <p class="pricing__plan-feature">Pricing Feature</p>
                     <a href="#" class="pricing__plan_btn btn__white btn__white--primary">Order Now</a>
+            </article>
+            <article class="pricing__plan">
+                <h3 class="pricing__plan-title">BUSINESS</h3>
+                <p class="pricing__plan-description">Organize across all 
+                    apps by hand</p>
+
+                    <div class="pricing__price">
+                        <span class="pricing__price-number">99</span>
+                        <div class="pricing__price-details">
+                            <span class="pricing__price-currency">$</span>
+                            <p class="pricing__price-period">Per Month</p>
+                        </div>
+                    </div>
+                    <p class="pricing__plan-feature">Pricing Feature</p>
+                    <p class="pricing__plan-feature">Pricing Feature</p>
+                    <p class="pricing__plan-feature">Pricing Feature</p>
+                    <p class="pricing__plan-feature">Pricing Feature</p>
+                    <p class="pricing__plan-feature">Pricing Feature</p>
+                    <a href="#" class="pricing__plan_btn btn--primary">Order Now</a>
             </article>
         </div>
     </section>

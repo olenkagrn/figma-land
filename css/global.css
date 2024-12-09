@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Graphic';
+    src: url('../assets/fonts/graphic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ :root{
+    scroll-behavior: smooth;
+    --main-white-color: white;
+    --btn-color-dark: #2091F9;
+ }
+  
+  body {
+    font-family: "Graphic", sans-serif;
+  }
