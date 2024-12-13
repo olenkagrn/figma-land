@@ -31,8 +31,20 @@
     margin: 0 auto;
   }
 
+  .secondary__heading{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.2;
+    text-align: center;
+    color: var(--text-title-color-dark);
+    line-height: 1;
+  }
+
   .btn, .btn:link, .btn:visited{
     display: inline-block;
+  width: auto;
+  align-items: center;
+  flex-grow: 0;
     background-color: var(--btn-color-dark);
     padding: 16px 62px ;
     border-radius: 100px;
