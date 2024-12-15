@@ -1,23 +1,79 @@
 .features {
-    padding: 100px 16px;
+
+  padding: 120px 16px;
     .features__info {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 28px;
+
   
-      .feature__subtitle {
+      .feature__subtitle-mobile {
         font-size: 28px;
         line-height: 1.3;
         font-weight: 400;
         letter-spacing: 0.2;
         text-align: center;
         color: var(--text-subtitle-color-dark);
+        
+        @media screen and (min-width:460px) {
+          display: none;
+        }
       }
+
+        .feature__subtitle-desktop{
+          display: none;
+
+          @media screen and (min-width:460px) {
+            display: inline-block;
+            max-width: 550px;
+            font-size: 28px;
+            line-height: 1.3;
+            font-weight: 400;
+            letter-spacing: 0.2;
+            text-align: center;
+            color: var(--text-subtitle-color-dark);
+           }
+          }
+      
+      
+    }
+  
+    .features__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+      gap: 40px;
+      
+      padding: 80px 36px;
+  
+      @media screen and (min-width:460px) {
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+        
+      }
+      @media screen and (min-width:950px) {
+       gap:80px;
+        
+      }
+      
       .features__video {
+        margin: 0 auto;
+        max-width: 1200px;
         position: relative;
         width: 100%;
         aspect-ratio: 2/1;
-        border-radius: 16px;
+        border-radius: 15px;
+
+        @media screen and (min-width:650px) {
+       
+          grid-column: 1 / -1; /* Розтягується на всі колонки */
+          grid-row: 4 / 5; /* Другий рядок */
+        }
+        @media screen and (min-width:1050px) {
+       
+          grid-column: 1 / -1; /* Розтягується на всі колонки */
+          grid-row: 2 / 3; /* Другий рядок */
+        }
+        
       }
       .features__video iframe {
         width: 100%;
@@ -25,19 +81,15 @@
         object-fit: cover;
         border-radius: inherit;
       }
-    }
-  
-    .features__container {
-      margin-top: 68px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
-  
       .feature__item {
         display: grid;
+       margin: 0 auto;
         gap: 20px;
         text-align: center;
         place-items: center;
+        max-width: 230px;
+       
+
         .feature__icon {
           object-fit: cover;
         }
@@ -48,8 +100,19 @@
           align-items: center;
         }
         .feature__description {
+          letter-spacing: 1.2;
+          line-height: 1.5;
+          font-size: 18px;
+          font-weight: 400;
+        }
+       
+        }
+
+        
+          
+          
         }
       }
-    }
-  }
+    
+  
   
