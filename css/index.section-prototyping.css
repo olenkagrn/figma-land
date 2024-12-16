@@ -1,23 +1,32 @@
 .prototyping {
     padding: 0px 20px 100px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:80px;
+    display: grid;
+    grid-template-columns: 1fr; /* Дві колонки */
+    grid-template-rows: auto auto; /* Два рядки */
+    gap: 40px;
     @media screen and (min-width:520px) {
-        flex-direction: row;
-        align-items: center;
-        jus
+      grid-template-columns: 1fr 1fr; /* Дві колонки */
+      grid-template-rows: auto auto; /* Два рядки */
+        
     }
   
-    .prototyping__info {
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 86px;
-  
+    
+    
       .prototyping__img-container {
         width: 100%;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        @media screen and (min-width:520px) {
+          grid-column: 1/2;
+          grid-row: 1/3;  
+ 
+         }
+      
+            @media screen and (min-width:520px) {
+              
+            
+            
+        }
   
         .prototyping__img {
           width: 100%;
@@ -25,9 +34,21 @@
           object-fit: cover;
         }
       }
-  
+        
       .prototyping__text-block {
         text-align: center;
+
+        @media screen and (min-width:520px) {
+          align-self: end;
+          max-width: 350px;
+
+
+                  grid-column: 2/3;
+          grid-row: 1/2;   
+          text-align: start;
+
+ 
+         }
   
         .prototyping__caption {
           font-weight: 700;
@@ -38,13 +59,14 @@
         .prototyping__heading-desktop {
           display: none;
           @media screen and (min-width:520px) {
-            display: block;
+            display:inline;
             font-size: 48px;
     font-weight: 400;
     letter-spacing: 0.2;
-    text-align: center;
+    text-align: start;
     color: var(--text-title-color-dark);
     line-height: 1;
+
            }
         }
   
@@ -61,7 +83,14 @@
     .prototyping__form {
         width: 100%;
         text-align: center;
-       
+        @media screen and (min-width:520px) {
+          align-self: start;
+          text-align: start;
+
+          grid-column: 2/3;
+          grid-row: 2/3;   
+ 
+         }
   
       .prototyping__form-heading {
        margin-bottom: 10px;
@@ -79,6 +108,8 @@
 
         @media screen and (min-width:520px) {
          flex-direction: row;   
+        align-items: flex-start;
+
 
         }
        
@@ -114,5 +145,9 @@
         }
       }
     }
-  }
+  
+
+
+
+
   
