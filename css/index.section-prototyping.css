@@ -1,0 +1,44 @@
+.prototyping{
+    padding: 0px 20px 100px 20px;
+    .prototyping__info{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:86px;
+    .prototyping__img-container{
+        width: 100%;
+        aspect-ratio: 1/1;
+        .prototyping__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .prototyping__text-block{
+        text-align: center;
+
+        .prototyping__caption{
+            font-weight: 700;
+            font-size:20px;
+            margin-bottom:8px ;
+        }
+        .prototyping__heading-desktop{
+            display: none;
+        }
+        .prototyping__heading-mobile{
+            margin-bottom: 28px;
+    
+        }
+    }
+        .prototyping__form{
+            
+            
+            .prototyping__form-heading{
+
+            }
+            .prototyping__form-description{}
+            .prototyping__input{}
+            .btn-subscribe{}
+        }
+    }
+}
