@@ -20,6 +20,8 @@
     --text-subtitle-color-dark: #374754;
     --btn-color-dark: #2091F9;
     --btn-color-primary:#73b5f3;
+    --input-border-color: #E8E8E8;
+    --input-bg-color:#F4F4F4;
  }
   
   body {
