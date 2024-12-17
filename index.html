@@ -1,63 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figma Land</title>      
-    <link rel="stylesheet" href="css/index.css"> 
-  </head>
-  <body>
-    <section class="hero">
-      <header class="hero__header container">
-        <nav class="hero__nav">
-          <a href="#" class="hero__logo-link">
-            <img src="assets/img/photo/logo.png" alt="Logo photo" class="hero__logo" />
-          </a>
-          
-          <a href="#" class="header__menu-btn">
-            <span class="header__navicon"></span>
-          </a>
-        
-          <ul class="hero__nav-list">
-            <li class="hero__nav-item">Home</li>
-            <li class="hero__nav-item">Product</li>
-            <li class="hero__nav-item">Pricing</li>
-            <li class="hero__nav-item">About</li>
-            <li class="hero__nav-item">Contact</li>
-          </ul>
-        </nav>
-      </header>
-      
-      <div class="hero__information">
-        <h1 class="hero__heading">The best products start with Figma</h1>
-        <p class="hero__description-mobile">
-          Most calendars are designed for teams. 
-        </p>
-        <p class="hero__description-desktop">
-          Most calendars are designed for teams. 
-          Slate is designed for freelancers
-        </p>
-        <a href="#" class="hero__btn btn">Try For Free</a>
-      </div>
-    </section>
-
-    <section class="features container">
-      <div class="features__info">
-        <h2 class="features__title secondary__heading">Features</h2>
-        <p class="feature__subtitle-mobile subtitle-mobile">
-          Most calendars are designed for teams. 
-        </p>
-        <p class="feature__subtitle-desktop">
-          Most calendars are designed for teams. 
-          Slate is designed for freelancers
-        </p>
-         
-      </div>
-
+.prototyping { padding: 0px 20px 100px 20px; display: grid;
+  grid-template-columns: 1fr; /* Дві колонки */ grid-template-rows: auto auto; /*
+  Два рядки */ gap: 40px; @media screen and (min-width:520px) {
+  grid-template-columns: 1fr 1fr; /* Дві колонки */ grid-template-rows: auto auto;
+  /* Два рядки */ } .prototyping__img-container { width: 100%; aspect-ratio: 3 /
+  2; object-fit: cover; @media screen and (min-width:520px) { grid-column: 1/2;
+  grid-row: 1/3; } @media screen and (min-width:520px) { } .prototyping__img {
+  width: 100%; height: 100%; object-fit: cover; } } .prototyping__text-block {
+  text-align: center; @media screen and (min-width:520px) { align-self: end;
+  max-width: 350px; grid-column: 2/3; grid-row: 1/2; text-align: start; }
+  .prototyping__caption { font-weight: 700; font-size: 20px; margin-bottom: 8px; }
+  .prototyping__heading-desktop { display: none; @media screen and
+  (min-width:520px) { display:inline; font-size: 48px; font-weight: 400;
+  letter-spacing: 0.2; text-align: start; color: var(--text-title-color-dark);
+  line-height: 1; } } .prototyping__heading-mobile { margin-bottom: 28px; @media
+  screen and (min-width:520px) { display: none; } } } } .prototyping__form {
+  width: 100%; text-align: center; @media screen and (min-width:520px) {
+  align-self: start; text-align: start; grid-column: 2/3; grid-row: 2/3; }
+  .prototyping__form-heading { margin-bottom: 10px; }
+  .prototyping__form-description { margin-bottom: 20px; }
+  .prototyping__email-container { display: flex; flex-direction: column;
+  align-items: center; gap:12px; @media screen and (min-width:520px) {
+  flex-direction: row; align-items: flex-start; } .prototyping__input { width:
+  100%; padding: 20px 36px; background-color: var(--input-bg-color); border: 1px
+  solid var(--input-border-color) ; border-radius: 40px; font-size: 14px; @media
+  screen and (min-width:520px) { width: 70%; } } .btn-subscribe { font-size: 20px;
+  font-weight: 400; color: var(--main-white-color); width: 100%; text-align:
+  center; display: flex; justify-content: center; align-items: center; @media
+  screen and (min-width:520px) { width: 30%; } } } }
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Figma Land</title>
+      <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+      <section class="hero">
+        <header class="hero__header container">
+          <nav class="hero__nav">
+            <a href="#" class="hero__logo-link">
+              <img
+                src="assets/img/photo/logo.png"
+                alt="Logo photo"
+                class="hero__logo"
+              />
+            </a>
+  
+            <a href="#" class="header__menu-btn">
+              <span class="header__navicon"></span>
+            </a>
+  
+            <ul class="hero__nav-list">
+              <li class="hero__nav-item">Home</li>
+              <li class="hero__nav-item">Product</li>
+              <li class="hero__nav-item">Pricing</li>
+              <li class="hero__nav-item">About</li>
+              <li class="hero__nav-item">Contact</li>
+            </ul>
+          </nav>
+        </header>
+  
+        <div class="hero__information">
+          <h1 class="hero__heading">The best products start with Figma</h1>
+          <p class="hero__description-mobile">
+            Most calendars are designed for teams.
+          </p>
+          <p class="hero__description-desktop">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </p>
+          <a href="#" class="hero__btn btn">Try For Free</a>
+        </div>
+      </section>
+  
+      <section class="features container">
+        <div class="features__info">
+          <h2 class="features__title secondary__heading">Features</h2>
+          <p class="feature__subtitle-mobile subtitle-mobile">
+            Most calendars are designed for teams.
+          </p>
+          <p class="feature__subtitle-desktop">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </p>
+        </div>
+  
         <div class="features__container">
-           <div class="features__video">
-        <iframe  src="https://www.youtube.com/embed/Aiay8I5IPB8?si=GEJs4K4VUD7_il67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+          <div class="features__video">
+            <iframe
+              src="https://www.youtube.com/embed/Aiay8I5IPB8?si=GEJs4K4VUD7_il67"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
           <article class="feature__item">
             <img
               src="assets/img/svg/Vector.png"
@@ -70,7 +109,7 @@
               your financial goal.
             </p>
           </article>
-
+  
           <acticle class="feature__item">
             <img
               src="assets/img/svg/mdi_draw.png"
@@ -83,229 +122,276 @@
               your financial goal.
             </p>
           </acticle>
-
+  
           <acticle class="feature__item">
             <img
               src="assets/img/svg/mdi_brush.png"
               alt="Fastest way to 
-take action"
+  take action"
               class="feature__icon"
             />
-            <h3 class="feature__title secondary__heading">Fastest way to take action</h3>
+            <h3 class="feature__title secondary__heading">
+              Fastest way to take action
+            </h3>
             <p class="feature__description">
               Slate helps you see how many more days you need to work to reach
               your financial goal.
             </p>
-            
           </acticle>
         </div>
-    </section>
-
-    <section class="organize container">
-      <div class="organize__container">
-        <h2 class="organize__title secondary__heading">Fastest way to organize</h2>
-        <p class="organize__subtitle subtitle-mobile">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
-        </p>
-        <p class="organize__subtitle subtitle-desktop">
-          Most calendars are designed for teams. 
-          Slate is designed for freelancers
-        </p>
-        <a href="#" class="organize__btn btn">Try For Free</a>
-      </div>
-      <div class="organize__img-container">
-        <img src="assets/img/photo/mockup-product.png" alt="Product Mockup" class="organize__img" />
-      </div>
-    </section>
-
-    <section class="prototyping container">
+      </section>
+  
+      <section class="organize container">
+        <div class="organize__container">
+          <h2 class="organize__title secondary__heading">
+            Fastest way to organize
+          </h2>
+          <p class="organize__subtitle subtitle-mobile">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </p>
+          <p class="organize__subtitle subtitle-desktop">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </p>
+          <a href="#" class="organize__btn btn">Try For Free</a>
+        </div>
+        <div class="organize__img-container">
+          <img
+            src="assets/img/photo/mockup-product.png"
+            alt="Product Mockup"
+            class="organize__img"
+          />
+        </div>
+      </section>
+  
+      <section class="prototyping container">
         <div class="prototyping__text-block">
           <p class="prototyping__caption">At your fingertips</p>
-          <h2 class="prototyping__heading-mobile secondary__heading">Newsletter</h2>
+          <h2 class="prototyping__heading-mobile secondary__heading">
+            Newsletter
+          </h2>
           <h2 class="prototyping__heading-desktop secondary__heading">
             Lightning fast prototyping
           </h2>
           <p class="subtitle-mobile">
-            Most calendars are designed for teams. Slate is designed for freelancers
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
           </p>
-      </div>
-
-      <figure class="prototyping__img-container">
-        <img src="assets/img/photo/left-container.png" alt="Person with a letter" class="prototyping__img" />
-      </figure>
-    
-      <form class="prototyping__form" action="/submit">
-        <h3 class="prototyping__form-heading">Subscribe to our Newsletter</h3>
-        <p class="prototyping__form-description">Available exclusively on Figmaland</p>
-        <div class="prototyping__email-container">
-          <input class="prototyping__input" type="email" placeholder="Your Email" name="email" id="email" required />
-          <button type="submit" class="btn btn-subscribe">Subscribe</button>
         </div>
-      </form>
-    </section>
-    
-    
-    <section class="partners container">
-      <h2 class="partners__title secondary__heading">Partners</h2>
-      <p class="partners__description">
-        Most calendars are designed for teams. Slate is designed for freelancers
-      </p>
-      <div class="partners__container">
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
+  
+        <figure class="prototyping__img-container">
           <img
-            class="partner__logo"
-            src="assets/img/photo/logos_google-1.png"
-            alt="Google Logo"
+            src="assets/img/photo/left-container.png"
+            alt="Person with a letter"
+            class="prototyping__img"
           />
         </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img
-            class="partner__logo"
-            src="assets/img/photo/amazon.png"
-            alt="Amazon Logo"
-          />
-        </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img
-            class="partner__logo"
-            src="assets/img/photo/microsoft.png"
-            alt="Microsoft Logo"
-          />
-        </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img class="partner__logo" src="assets/img/photo/uber.png" alt="Uber Logo" />
-        </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img
-            class="partner__logo"
-            src="assets/img/photo/dropbox.png"
-            alt="Dropbox Logo"
-          />
-        </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img
-            class="partner__logo"
-            src="assets/img/photo/logos_google-1.png"
-            alt="Google Logo"
-          />
-        </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img class="partner__logo" src="assets/img/photo/uber.png" alt="Uber Logo" />
-        </figure>
-
-        <figure class="partner">
-          <figcaption class="partner__name">Client Name</figcaption>
-          <img
-            class="partner__logo"
-            src="assets/img/photo/amazon.png"
-            alt="Amazon Logo"
-          />
-        </figure>
-      </div>
-      <a href="#" class="partners_btn btn ">Try For Free</a>
-    </section>
-
-    <section class="testimonials">
-      <h2 class="testimonials__title">Testimonials</h2>
-      <figure>
-        <img src="assets/img/photo/logos_ibm.png" alt="IBM Logo" class="testimonials__logo" />
-      </figure>
-      <p class="testimonials__text">
-        Most calendars are designed for teams. Slate is designed for freelancers
-        who want a simple way to plan their schedule.
-      </p>
-
-      <div class="testimonials__author">
-        <img
-          class="testimonials__author-photo"
-          src="assets/img/photo/testimonial.png"
-          alt="Testimonial Author"
-        />
-        <div class="testimonials__author-info">
-          <p class="testimonials__author-name">Organize across</p>
-          <p class="testimonials__author-role">UI Designer</p>
+  
+        <form class="prototyping__form" action="/submit">
+          <h3 class="prototyping__form-heading">Subscribe to our Newsletter</h3>
+          <p class="prototyping__form-description">
+            Available exclusively on Figmaland
+          </p>
+          <div class="prototyping__email-container">
+            <input
+              class="prototyping__input"
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              id="email"
+              required
+            />
+            <button type="submit" class="btn btn-subscribe">Subscribe</button>
+          </div>
+        </form>
+      </section>
+  
+      <section class="partners container">
+        <h2 class="partners__title secondary__heading">Partners</h2>
+        <p class="partners__description">
+          Most calendars are designed for teams. Slate is designed for freelancers
+        </p>
+        <div class="partners__container">
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/logos_google-1.png"
+              alt="Google Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/amazon.png"
+              alt="Amazon Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/microsoft.png"
+              alt="Microsoft Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/uber.png"
+              alt="Uber Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/dropbox.png"
+              alt="Dropbox Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/logos_google-1.png"
+              alt="Google Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/uber.png"
+              alt="Uber Logo"
+            />
+          </figure>
+  
+          <figure class="partner">
+            <figcaption class="partner__name">Client Name</figcaption>
+            <img
+              class="partner__logo"
+              src="assets/img/photo/amazon.png"
+              alt="Amazon Logo"
+            />
+          </figure>
         </div>
-      </div>
-      <a href="#" class="testimonials_btn btn btn--primary">Try For Free</a>
-    </section>
-    <section class="pracing">
-        <h2 class="pracing__title">Pricing</h2>
-        <p class="pracing__description">Most calendars are designed for teams. 
-            Slate is designed for freelancers</p>
-        <div class="pricing__plans">
-            <article class="pricing__plan">
-                <h3 class="pricing__plan-title">FREE</h3>
-                <p class="pricing__plan-description">Organize across all 
-                    apps by hand</p>
-
-                    <div class="pricing__price">
-                        <span class="pricing__price-number">0</span>
-                        <div class="pricing__price-details">
-                            <span class="pricing__price-currency">$</span>
-                            <p class="pricing__price-period">Per Month</p>
-                        </div>
-                    </div>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <a href="#" class="pricing__plan_btn btn--primary">Order Now</a>
-            </article>
-            <article class="pricing__plan">
-                <h3 class="pricing__plan-title">STANDARD</h3>
-                <p class="pricing__plan-description">Organize across all 
-                    apps by hand</p>
-
-                    <div class="pricing__price">
-                        <span class="pricing__price-number">10</span>
-                        <div class="pricing__price-details">
-                            <span class="pricing__price-currency">$</span>
-                            <p class="pricing__price-period">Per Month</p>
-                        </div>
-                    </div>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <a href="#" class="pricing__plan_btn btn__white btn__white--primary">Order Now</a>
-            </article>
-            <article class="pricing__plan">
-                <h3 class="pricing__plan-title">BUSINESS</h3>
-                <p class="pricing__plan-description">Organize across all 
-                    apps by hand</p>
-
-                    <div class="pricing__price">
-                        <span class="pricing__price-number">99</span>
-                        <div class="pricing__price-details">
-                            <span class="pricing__price-currency">$</span>
-                            <p class="pricing__price-period">Per Month</p>
-                        </div>
-                    </div>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <p class="pricing__plan-feature">Pricing Feature</p>
-                    <a href="#" class="pricing__plan_btn btn--primary">Order Now</a>
-            </article>
+        <a href="#" class="partners_btn btn">Try For Free</a>
+      </section>
+  
+      <section class="testimonials container">
+        <h2 class="testimonials__title secondary__heading">Testimonials</h2>
+        <figure class="testimonials__photo-container">
+          <img
+            src="assets/img/photo/logos_ibm.png"
+            alt="IBM Logo"
+            class="testimonials__logo"
+          />
+        </figure>
+        <p class="testimonials__text">
+          Most calendars are designed for teams. Slate is designed for freelancers
+          who want a simple way to plan their schedule.
+        </p>
+  
+        <div class="testimonials__author">
+          <img
+            class="testimonials__author-photo"
+            src="assets/img/photo/testimonial.png"
+            alt="Testimonial Author"
+          />
+          <div class="testimonials__author-info">
+            <p class="testimonials__author-name">Organize across</p>
+            <p class="testimonials__author-role">UI Designer</p>
+          </div>
         </div>
-    </section>
-  </body>
-</html>
-
+        <a href="#" class="testimonials_btn btn">More Testimonials</a>
+      </section>
+      <section class="pricing">
+        <h2 class="pricing__title secondary__heading">Pricing</h2>
+        <p class="pricing__description">
+          Most calendars are designed for teams. Slate is designed for freelancers
+        </p>
+        <div class="pricing__plans container">
+          <article class="pricing__plan pricing__plan--primary">
+            <div class="pricing__info">
+              <h3 class="pricing__plan-title">FREE</h3>
+              <p class="pricing__plan-description">
+                Organize across all apps by hand
+              </p>
+            </div>
+            <div class="pricing__price">
+              <span class="pricing__price-number">0</span>
+              <div class="pricing__price-details">
+                <span class="pricing__price-currency">$</span>
+                <p class="pricing__price-period">Per Month</p>
+              </div>
+            </div>
+            <div class="pricing__plan-features">
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+            </div>
+            <a href="#" class="pricing__plan-btn btn">Order Now</a>
+          </article>
+          <article class="pricing__plan pricing__plan--darken">
+            <div class="pricing__info">
+              <h3 class="pricing__plan-title">STANDARD</h3>
+              <p class="pricing__plan-description">
+                Organize across all apps by hand
+              </p>
+            </div>
+            <div class="pricing__price">
+              <span class="pricing__price-number">10</span>
+              <div class="pricing__price-details">
+                <span class="pricing__price-currency">$</span>
+                <p class="pricing__price-period">Per Month</p>
+              </div>
+            </div>
+            <div class="pricing__plan-features">
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+            </div>
+            <a href="#" class="pricing__plan-btn--white btn">Order Now</a>
+          </article>
+          <article class="pricing__plan pricing__plan--primary">
+            <div class="pricing__info">
+              <h3 class="pricing__plan-title">BUSINESS</h3>
+              <p class="pricing__plan-description">
+                Organize across all apps by hand
+              </p>
+            </div>
+            <div class="pricing__price">
+              <span class="pricing__price-number">99</span>
+              <div class="pricing__price-details">
+                <span class="pricing__price-currency">$</span>
+                <p class="pricing__price-period">Per Month</p>
+              </div>
+            </div>
+            <div class="pricing__plan-features">
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+              <p class="pricing__plan-feature">Pricing Feature</p>
+            </div>
+            <a href="#" class="pricing__plan-btn btn">Order Now</a>
+          </article>
+        </div>
+      </section>
+    </body>
+  </html>
+  
