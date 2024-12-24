@@ -363,22 +363,25 @@
         </article>
       </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us container">
       <h2 class="contact-us__title secondary__heading">Contact Us</h2>
-      <p class="contact-us__description">
+      <p class="contact-us__description subtitle-mobile">
         Most calendars are designed for teams.
+      </p>
+      <p class="contact-us__description subtitle-desktop">
+        Most calendars are designed for teams. Slate is designed for freelancers
       </p>
       <div class="contact-us__icons-container">
         <img
-          src="assets/img/svg/ant-design_twitter-outlined.png"
+          src="assets/img/svg/ant-design_twitter-outlined.svg"
           alt="Twitter icon"
           class="contact-us__icon"
         /><img
-          src="assets/img/svg/ant-design_facebook-filled.png"
+          src="assets/img/svg/ant-design_facebook-filled.svg"
           alt="Facebook Icon"
           class="contact-us__icon"
         /><img
-          src="assets/img/svg/ant-design_linkedin-filled.png"
+          src="assets/img/svg/ant-design_linkedin-filled.svg"
           alt="Linkedin Icon"
           class="contact-us__icon"
         />
@@ -419,17 +422,39 @@
       </div>
 
       <div class="contact-us__form-container">
-        <h4>Contact Us</h4>
+        <h4 class="contact-us__form-title">Contact Us</h4>
         <form action="#" method="post" class="contact-us__form">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="contact-us__input"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="contact-us__input"
+          />
           <textarea
             name="message"
             placeholder="Your Message"
+            class="contact-us__input-textarea"
             required
           ></textarea>
           <button type="submit" class="btn btn__contact-us">Send</button>
         </form>
+      </div>
+      <div class="contact-us__map-container">
+        <iframe
+          class="contact-us__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.63508428869!2d24.01223555!3d49.83268904999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1735076092114!5m2!1suk!2sua"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
